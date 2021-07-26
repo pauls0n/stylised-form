@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylised Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">
+      Thank you for taking your time to share your experience with us.
+    </p>
+    <form action="#" id="survey-form">
+      <div class="form-field">
+        <label for="name" id="name-label">Your name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Eg. John Doe"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="email" id="email-label">Your email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Eg. john@doe.com"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="dropdown" id="select-label">Your Subsription Plan:</label>
+        <select name="plan" id="dropdown" required>
+          <option value="Basic">Basic</option>
+          <option value="Basic">Pro</option>
+          <option value="Basic">Pro Plus</option>
+        </select>
+      </div>
+      <fieldset class="form-field">
+        <legend>How satisfied are you with our service?</legend>
+        <label for="very-statisfied" id="radio-label"
+          ><input
+            type="radio"
+            name="satisfaction"
+            id="very-statisfied"
+            value="very-satisfied"
+          />Very satisfied</label
+        >
+        <label for="somewhat-statisfied" id="radio-label"
+          ><input
+            type="radio"
+            name="satisfaction"
+            id="somewhat-statisfied"
+            value="somewhat-satisified"
+          />Somewhat satisfied</label
+        >
+        <label for="statisfied" id="radio-label"
+          ><input
+            type="radio"
+            name="satisfaction"
+            id="statisfied"
+            value="satisfied"
+          />Satisfied</label
+        >
+        <label for="not-statisfied" id="radio-label"
+          ><input
+            type="radio"
+            name="satisfaction"
+            id="not-statisfied"
+            value="not-satisfied"
+          />Not satisfied</label
+        >
+        <label for="poorly-statisfied" id="radio-label"
+          ><input
+            type="radio"
+            name="satisfaction"
+            id="poorly-statisfied"
+            value="poorly-satisfied"
+          />Poorly satisfied</label
+        >
+      </fieldset>
+      <fieldset class="form-field">
+        <legend>Which best describes our service?</legend>
+        <label for="recommended" id="checkbox-label"
+          ><input
+            type="checkbox"
+            name="describe"
+            id="recommended"
+            value="recommended"
+          />Highly recommended</label
+        >
+        <label for="great-service" id="checkbox-label"
+          ><input
+            type="checkbox"
+            name="describe"
+            id="great-service"
+            value="great-service"
+          />Great service</label
+        >
+        <label for="friendly-support" id="checkbox-label"
+          ><input
+            type="checkbox"
+            name="describe"
+            id="friendly-support"
+            value="friendly-support"
+          />Friendly customer support</label
+        >
+        <label for="too-costly" id="checkbox-label"
+          ><input
+            type="checkbox"
+            name="describe"
+            id="too-costly"
+            value="too-costly"
+          />Too costly</label
+        >
+        <label for="not-good" id="checkbox-label"
+          ><input
+            type="checkbox"
+            name="describe"
+            id="not-good"
+            value="not-good"
+          />Not good</label
+        >
+      </fieldset>
+      <div class="form-field">
+        <label for="number" id="number-label">How would you rate us?</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="5"
+          placeholder="Rate us out of 5"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="comments" id="textarea-label"
+          >Do you have any additional suggestions?</label
+        >
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter your feedbacks/suggestions here"
+        ></textarea>
+      </div>
+      <input type="submit" value="Send" />
+    </form>
+    <footer>
+      <p>
+        Made by
+        <a href="https://github.com/pauls0n" target="_blank">@pauls0n</a>
+      </p>
+      <p>Please do not enter any sensitive info. This form is not functional, it was developed for learning only.</p>
+    </footer>
+  </body>
+</html>
